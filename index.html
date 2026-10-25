@@ -217,13 +217,13 @@ const HRA = {
       uvod: "Mám dva postupy se stejnými šipkami, jen v jiném pořadí. Který z nich doručí balíček?",
       zaverMise: "Stejné příkazy v jiném pořadí mohou dovést úplně jinam. Na pořadí záleží!",
       ulohy: [
-        {n: 4, start: [3,0], cil: [0,1], prekazky: [[1,0]], A: "→↑↑↑", B: "↑↑↑→"},
+        {n: 4, start: [3,0], cil: [0,1], prekazky: [[1,0]], A: "↑↑↑→", B: "→↑↑↑"},
         {n: 5, start: [4,0], cil: [0,2], prekazky: [[2,1]], A: "↑↑↑↑→→", B: "↑→↑↑↑→", poznamka: "Tuhle mřížku znáš z pracovního listu!"},
-        {n: 4, start: [3,3], cil: [0,2], prekazky: [[2,2]], A: "↑↑↑←", B: "←↑↑↑"},
+        {n: 4, start: [3,3], cil: [0,2], prekazky: [[2,2]], A: "←↑↑↑", B: "↑↑↑←"},
         {n: 5, start: [4,2], cil: [1,4], prekazky: [[3,3],[2,1]], A: "↑↑→→↑", B: "→→↑↑↑"},
         {n: 5, start: [0,0], cil: [3,3], prekazky: [[1,0],[2,2]], A: "→→→↓↓↓", B: "↓↓↓→→→"},
-        {n: 5, start: [4,4], cil: [0,0], prekazky: [[2,4],[1,1]], A: "←↑↑↑↑←←←", B: "↑↑↑↑←←←←"},
-        {n: 5, start: [2,0], cil: [2,4], prekazky: [[2,2]], A: "↑→→→→↓", B: "→→↑→→↓"},
+        {n: 5, start: [4,4], cil: [0,0], prekazky: [[2,4],[1,1]], A: "↑↑↑↑←←←←", B: "←↑↑↑↑←←←"},
+        {n: 5, start: [2,0], cil: [2,4], prekazky: [[2,2]], A: "→→↑→→↓", B: "↑→→→→↓"},
         {n: 5, start: [4,1], cil: [0,3], prekazky: [[2,1],[1,3],[3,3]], A: "→↑↑↑↑→", B: "↑↑↑↑→→"}
       ]
     },
@@ -261,12 +261,12 @@ const HRA = {
       zaverMise: "Ke stejnému domu vede víc správných algoritmů. Důležité je, aby byl přesný a opravdu dovedl do cíle.",
       // otazka: "narazi" = která cesta narazí, "bezpecna" = která dojde, "kolik" = kolik cest dojde, "nejkratsi" = nejkratší cesta, která dojde
       ulohy: [
-        {n: 5, start: [4,0], cil: [0,2], prekazky: [[2,1]], otazka: "narazi", cesty: ["↑↑↑↑→→", "→→↑↑↑↑", "↑→↑↑↑→"]},
-        {n: 5, start: [4,0], cil: [1,3], prekazky: [[3,1],[2,3]], otazka: "bezpecna", cesty: ["↑↑↑→→→", "→→→↑↑↑", "↑↑→→→↑"]},
+        {n: 5, start: [4,0], cil: [0,2], prekazky: [[2,1]], otazka: "narazi", cesty: ["↑→↑↑↑→", "↑↑↑↑→→", "→→↑↑↑↑"]},
+        {n: 5, start: [4,0], cil: [1,3], prekazky: [[3,1],[2,3]], otazka: "bezpecna", cesty: ["→→→↑↑↑", "↑↑↑→→→", "↑↑→→→↑"]},
         {n: 5, start: [4,4], cil: [0,0], prekazky: [[2,2]], otazka: "kolik", cesty: ["←←←←↑↑↑↑", "↑↑↑↑←←←←", "↑↑←←←←↑↑"]},
         {n: 5, start: [0,0], cil: [4,4], prekazky: [[1,2],[3,2]], otazka: "kolik", cesty: ["↓↓↓↓→→→→", "→→→→↓↓↓↓", "→↓↓→→→↓↓"]},
         {n: 5, start: [2,0], cil: [2,4], prekazky: [[2,2],[1,2]], otazka: "nejkratsi", cesty: ["→→→→", "↓→→→→↑", "↑↑→→→→↓↓"]},
-        {n: 6, start: [5,0], cil: [0,5], prekazky: [[4,1],[2,3],[1,1],[3,4]], otazka: "narazi", cesty: ["↑↑↑↑↑→→→→→", "→→→→→↑↑↑↑↑", "↑→→→↑↑↑→→↑"]}
+        {n: 6, start: [5,0], cil: [0,5], prekazky: [[4,1],[2,3],[1,1],[3,4]], otazka: "narazi", cesty: ["↑↑↑↑↑→→→→→", "↑→→→↑↑↑→→↑", "→→→→→↑↑↑↑↑"]}
       ]
     }
   ]
